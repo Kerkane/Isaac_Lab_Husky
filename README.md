@@ -230,11 +230,17 @@ TurtlebotEnv (환경 구현 클래스)
 5. Isaac Lab 실행
 
   Isaac Lab 프로젝트는 기본적으로 ./isaaclab.sh -p scripts/reinforcement_learning/skrl/train.py 명령어를 통해 실행되며, 편의성을 위한 여러 flag가 존재한다.
---task: task id를 사용해 어떤 프로젝트를 실행할 지 결정한다.
---num_envs: 병렬 환경의 개수를 설정한다.
---headless: Isaac Sim GUI를 실행하지 않고 백그라운드에서 학습을 실행한다. 랜더링 과정이 생략되기 때문에 학습 속도가 매우 빨라진다.
---video: checkpoint마다 학습 과정의 영상을 저장한다.
---video_length: 저장할 영상의 길이를 설정한다.
+  
+  --task: task id를 사용해 어떤 프로젝트를 실행할 지 결정한다.
+  
+  --num_envs: 병렬 환경의 개수를 설정한다.
+  
+  --headless: Isaac Sim GUI를 실행하지 않고 백그라운드에서 학습을 실행한다. 랜더링 과정이 생략되기 때문에 학습 속도가 매우 빨라진다.
+  
+  --video: checkpoint마다 학습 과정의 영상을 저장한다.
+  
+  --video_length: 저장할 영상의 길이를 설정한다.
+
 다음의 명령어는 Isaac-Turtlebot-Direct-v0 id를 가진 프로젝트를 16개의 병렬 환경에서 실행한다.
 
 ```
