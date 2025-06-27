@@ -10,11 +10,6 @@ import gymnasium as gym
 
 from . import agents
 
-##
-# Register Gym environments.
-##
-
-
 gym.register(
     id="Isaac-Turtlebot-Direct-v0",
     entry_point=f"{__name__}.turtlebot_env:TurtlebotEnv",
