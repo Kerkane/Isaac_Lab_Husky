@@ -82,4 +82,4 @@ TUR_CFG = ArticulationCfg(
     },
 )
 ```
-  로봇 구성 파일인 Turtlebot.py는 ArticulationCfg 클래스를 정의하여 로봇의 종류와 물리적인 성질을 결정한다. spawn에서 로봇의 urdf나 usd 파일을 불러와 어떤 로봇을 사용할 지 결정하며, 오류 발생을 낮추기 위해 urdf를 그대로 사용하기보다는 Isaac Sim에서 움직임에 관여하는 joint를 velocity로 설정한 후 import하여 usd 파일로 저장한 후 사용하는 것을 권장한다. rigid_props에서 로봇의 강체 속성 여부(rigid_body_enabled)와 최대 속도(max_linear_velocity, max_angular_velocity), 그리고 자이로스코픽 효과를 통해 보다 현실적인 움직임을 구현할 지(gyroscopic_forces) 결정할 수 있다. init_state를 통해 로봇과 joint의 초기 위치 및 속도를 지정한다. 마지막으로 actuators에서는 로봇의 joint들을 제어
+  로봇 구성 파일인 Turtlebot.py는 ArticulationCfg 클래스를 정의하여 로봇의 종류와 물리적인 성질을 결정한다. spawn에서 로봇의 urdf나 usd 파일을 불러와 어떤 로봇을 사용할 지 결정하며, 오류 발생을 낮추기 위해 urdf를 그대로 사용하기보다는 Isaac Sim에서 움직임에 관여하는 joint를 velocity로 설정한 후 import하여 usd 파일로 저장한 후 사용하는 것을 권장한다. rigid_props에서 로봇의 강체 속성 여부(rigid_body_enabled)와 최대 속도(max_linear_velocity, max_angular_velocity), 그리고 자이로스코픽 효과를 통해 보다 현실적인 움직임을 구현할 지(gyroscopic_forces) 결정할 수 있다. init_state를 통해 로봇과 joint의 초기 위치 및 속도를 지정한다. 마지막으로 actuators에서는 로봇의 joint들을 제어한다.
