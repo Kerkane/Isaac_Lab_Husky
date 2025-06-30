@@ -1,4 +1,4 @@
-본 문서는 Turtlebot3 Burger 로봇, skrl 라이브러리와 PPO 알고리즘, Direct Task를 기반으로 한 프로젝트를 예시로 설명합니다.
+본 문서는 Turtlebot3 Burger 로봇, skrl 라이브러리와 PPO 알고리즘, Direct Task를 기반으로 한 프로젝트를 예시로 설명한다.
 
   ./isaaclab.sh --new 명령어를 통해 새로운 Isaac Lab 프로젝트를 생성할 수 있다. Isaac Lab에서 새로 만들어진 프로젝트를 구성할 때 구현해야 할 부분은 크게 로봇 정의(isaaclab_assets/isaaclab_assets/robots/turtlebot.py), 시뮬레이션 환경 설정 및 태스크 구현(isaaclab_tasks/isaaclab_tasks/direct/turtlebot/turtlebot_env.py), 정책 신경망 구성(isaaclab_tasks/isaaclab_tasks/direct/turtlebot/agents/skrl_ppo_cfg.yaml)이다. 상술된 파일들은 isaaclab_tasks/isaaclab_tasks/direct/turtlebot/__init__.py에 의해 Isaac Lab에서 등록하여 사용한다.
 참고 문서: https://isaac-sim.github.io/IsaacLab/main/source/setup/walkthrough/index.html
